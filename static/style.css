@@ -30,3 +30,34 @@ nav {
 nav div a img {
     max-height: 50px;
 }
+
+.header-content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do fundo borrado */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Torna o texto visível sobre o fundo */
+    padding-top: 150px; /* Ajuste a posição vertical */
+}
+
+.header-content h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.2rem; /* Tamanho do parágrafo */
+    margin-bottom: 1.5rem;
+}
+
+.header-content .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.text-sucess {
+    color: rgb(0,191,99);
+}
+
+.bg-sucess {
+    background-color: rgb(0,191,99);
+}
