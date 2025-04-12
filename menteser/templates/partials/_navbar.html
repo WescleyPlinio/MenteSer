@@ -1,27 +1,27 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-dark{% if request.path == '/' %} opacity-50{% endif %}">
   <div class="container custom-container">
-    <a class="navbar-brand" href="index.html"><img src="{% static 'imgs/LogoH.svg' %}" alt="" /></a>
+    <a class="navbar-brand" href="{% url "index" %}"><img src="{% static 'imgs/LogoH.svg' %}" alt="" /></a>
 
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row d-none d-lg-flex">
       <li class="nav-item">
-        <a class="nav-link active text-center text-sucess" aria-current="page" href="{% url 'index' %}">Início</a>
+        <a class="nav-link text-center text-white" aria-current="page" href="{% url 'index' %}">Início</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-center text-sucess" href="agendar.html">Agendar</a>
+        <a class="nav-link text-center text-white" href="agendar.html">Tratamentos</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-center text-sucess" href="#">Blog</a>
+        <a class="nav-link text-center text-white" href="#">Blog</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-center text-sucess" href="usuario.html">Área do usuário</a>
+        <a class="nav-link text-center text-white" href="{% url 'login' %}">Área do usuário</a>
       </li>
     </ul>
-    <button class="btn btn-info d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+    <button class="btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-xl text-success fa-bars"></i></button>
   </div>
 </nav>
 
@@ -37,7 +37,7 @@
           </li>
     
           <li class="nav-item mb-2">
-            <a class="nav-link text-center text-sucess" href="agendar.html">Agendar</a>
+            <a class="nav-link text-center text-sucess" href="agendar.html">Tratamentos</a>
           </li>
     
           <li class="nav-item mb-2">
@@ -45,7 +45,7 @@
           </li>
     
           <li class="nav-item mb-2">
-            <a class="nav-link text-center text-sucess" href="usuario.html">Área do usuário</a>
+            <a class="nav-link text-center text-sucess" href="{% url 'login' %}">Área do usuário</a>
           </li>
     </ul>
   </div>
