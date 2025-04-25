@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main class="py-5">
+    <div class="container custom-container">
+      <h1 class="text-sucess">Tratamentos para transtornos psiquiátricos</h1>
+
+      <div class="row g-3 mt-3 d-flex justify-content-evenly align-items-center">
+        <div class="col-md-6 col-12">
+          <div class="card altura border-0 shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title text-success">Consulta individual</h5>
+              <p class="card-text">Atendimento personalizado para você, com profissionais experientes e focados em sua saúde mental.</p>
+              <a href="#" class="card-link">Agendar agora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title text-success">Terapia em grupo</h5>
+              <p class="card-text">Encontre apoio e conexão em um ambiente seguro e compartilhado com outras pessoas.</p>
+              <a href="#" class="card-link">Agendar agora</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+{% endblock %}

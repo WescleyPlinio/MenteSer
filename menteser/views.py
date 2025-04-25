@@ -6,3 +6,7 @@ from django.views import View
 class Index(View):
     def get(self, request):
         return render(request, 'index.html')
+    
+class Tratamentos(View):
+    def get(self, request):
+        return render(request, 'tratamentos.html')

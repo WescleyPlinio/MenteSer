@@ -71,9 +71,8 @@ nav div a img {
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
+} 
 
-form, h2 {
-    position: relative;
-    z-index: 2;
-}    
+.altura {
+    height: 300px;
+}
