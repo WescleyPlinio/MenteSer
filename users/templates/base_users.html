@@ -22,7 +22,7 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand bg-sucess">
+        <nav class="main-header navbar navbar-expand bg-success">
 
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -76,7 +76,12 @@
             <section class="content-header">
                 <div class="container-fluid">
 
-                    <h1 class="text-center">Bem-vindo, Wescley</h1>
+                {% if request.user.profile.nome_completo %}
+                <h1 class="text-success">Bem-vindo, {{reques.user.profile.nome_completo}}</h1>
+                {% else %}
+                
+                <h1 class="text-success">Olá!</h1>
+                {% endif %}
                 
                 </div>
             </section>
@@ -90,7 +95,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="bg-sucess py-4">
+        <footer class="bg-success py-4">
             <div class="container custom-container">
                 <div class="row g-2">
                     <div class="col-md-6 col-sm-12 col-lg-6 d-flex">

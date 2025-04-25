@@ -19,13 +19,7 @@
 
       {% if user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link text-center text-white" href="{% url 'index' %}">Área do {{ request.user.username }}</a>
-        </li>
-        <li class="nav-item">
-          <form class="nav-link text-center text-white" action="{% url 'logout' %}" method="post">
-            {% csrf_token %}
-            <a type="submit" class="text-white">Sair</a>
-          </form>
+          <a class="nav-link text-center text-white" href="{% url 'profile' %}">Área do {{ request.user.username }}</a>
         </li>
       {% else %}
         <li class="nav-item">
@@ -58,12 +52,12 @@
 
       {% if user.is_authenticated %}
         <li class="nav-item mb-4">
-          <a class="nav-link text-center text-sucess" href="{% url 'index' %}">Área do {{ request.user.username }}</a>
+          <a class="nav-link text-center text-sucess" href="{% url 'profile' %}">Área do {{ request.user.username }}</a>
         </li>
         <li class="nav-item mb-4">
           <form class="nav-link text-center text-sucess" action="{% url 'logout' %}" method="post">
             {% csrf_token %}
-            <a type="submit" class="text-sucess">Sair</a>
+            <button type="submit" class="btn text-sucess">Sair</button>
           </form>
         </li>
       {% else %}
