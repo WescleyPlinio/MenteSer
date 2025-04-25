@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View 
+from .models import Transtorno
 
 # Index page
 class Index(View):
@@ -9,4 +10,8 @@ class Index(View):
     
 class Tratamentos(View):
     def get(self, request):
-        return render(request, 'tratamentos.html')
+        transtornos = Transtorno.objects.all()
+        context = {
+            'transtornos': transtornos,
+        }
+        return render(request, 'tratamentos.html', context)

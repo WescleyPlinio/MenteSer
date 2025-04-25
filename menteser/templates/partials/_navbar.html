@@ -1,8 +1,8 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg bg-dark{% if request.path == '/' %} opacity-50{% endif %}">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container custom-container">
-    <a class="navbar-brand" href="{% url "index" %}"><img src="{% static 'imgs/LogoH.svg' %}" alt="" /></a>
+    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'imgs/LogoH.svg' %}" alt="" /></a>
 
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row d-none d-lg-flex">
       <li class="nav-item">
@@ -18,21 +18,20 @@
       </li>
 
       {% if user.is_authenticated %}
-      <li class="nav-item">
-        <a class="nav-link text-center text-white" href="{% url 'index' %}">Área do {{request.user.username}}</a>
-      </li>
-      <li class="nav-item">
-        <form class="nav-link text-center text-white" action="{% url 'logout' %}" method="post">
-          {% csrf_token %}
-          <a type="submit" class="text-white">Sair</a>
-        </form>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link text-center text-white" href="{% url 'index' %}">Área do {{ request.user.username }}</a>
+        </li>
+        <li class="nav-item">
+          <form class="nav-link text-center text-white" action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <a type="submit" class="text-white">Sair</a>
+          </form>
+        </li>
       {% else %}
-      <li class="nav-item">
-        <a class="nav-link text-center text-white" href="{% url 'login' %}">Área do usuário</a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link text-center text-white" href="{% url 'login' %}">Área do usuário</a>
+        </li>
       {% endif %}
-    
     </ul>
     <button class="btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-xl text-success fa-bars"></i></button>
   </div>
@@ -45,21 +44,33 @@
   </div>
   <div class="offcanvas-body">
     <ul class="text-decoration-none list-unstyled">
-        <li class="nav-item mb-2">
-            <a class="nav-link active text-center text-sucess" aria-current="page" href="{% url 'index' %}">Início</a>
-          </li>
-    
-          <li class="nav-item mb-2">
-            <a class="nav-link text-center text-sucess" href="{% url 'tratamentos' %}">Tratamentos</a>
-          </li>
-    
-          <li class="nav-item mb-2">
-            <a class="nav-link text-center text-sucess" href="#">Blog</a>
-          </li>
-    
-          <li class="nav-item mb-2">
-            <a class="nav-link text-center text-sucess" href="{% url 'login' %}">Área do usuário</a>
-          </li>
+      <li class="nav-item mb-4">
+        <a class="nav-link active text-center text-sucess" aria-current="page" href="{% url 'index' %}">Início</a>
+      </li>
+
+      <li class="nav-item mb-4">
+        <a class="nav-link text-center text-sucess" href="{% url 'tratamentos' %}">Tratamentos</a>
+      </li>
+
+      <li class="nav-item mb-4">
+        <a class="nav-link text-center text-sucess" href="#">Blog</a>
+      </li>
+
+      {% if user.is_authenticated %}
+        <li class="nav-item mb-4">
+          <a class="nav-link text-center text-sucess" href="{% url 'index' %}">Área do {{ request.user.username }}</a>
+        </li>
+        <li class="nav-item mb-4">
+          <form class="nav-link text-center text-sucess" action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <a type="submit" class="text-sucess">Sair</a>
+          </form>
+        </li>
+      {% else %}
+        <li class="nav-item mb-4">
+          <a class="nav-link text-center text-sucess" href="{% url 'login' %}">Área do usuário</a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </div>

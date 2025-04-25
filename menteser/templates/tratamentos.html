@@ -1,32 +1,39 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <main class="py-5">
-    <div class="container custom-container">
-      <h1 class="text-sucess">Tratamentos para transtornos psiquiátricos</h1>
-
-      <div class="row g-3 mt-3 d-flex justify-content-evenly align-items-center">
-        <div class="col-md-6 col-12">
-          <div class="card altura border-0 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title text-success">Consulta individual</h5>
-              <p class="card-text">Atendimento personalizado para você, com profissionais experientes e focados em sua saúde mental.</p>
-              <a href="#" class="card-link">Agendar agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-12">
-          <div class="card border-0 shadow-lg">
-            <div class="card-body">
-              <h5 class="card-title text-success">Terapia em grupo</h5>
-              <p class="card-text">Encontre apoio e conexão em um ambiente seguro e compartilhado com outras pessoas.</p>
-              <a href="#" class="card-link">Agendar agora</a>
-            </div>
-          </div>
-        </div>
-
+  <main class="py-5 container custom-container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="text-sucess mb-4">Tratamentos para transtornos psiquiátricos</h1>
+        <p>
+          Na MenteSer, oferecemos cuidados psicológicos e psiquiátricos com atenção individualizada e acolhimento humano. Nossa clínica é dedicada ao bem-estar mental, com foco em escuta, empatia e tratamentos baseados em evidências. <br /><br />
+          Contamos com uma equipe multidisciplinar preparada para atender diferentes necessidades, desde quadros leves de ansiedade até transtornos mais complexos. Cada paciente recebe um plano terapêutico personalizado, pensado para promover equilíbrio emocional, autoconhecimento e qualidade de vida. <br /><br />
+          Nosso compromisso é cuidar de cada pessoa de forma ética, respeitosa e próxima, em um ambiente seguro e tranquilo.
+        </p>
       </div>
+      <div class="col-md-4 d-none d-md-flex">
+        <img src="{% static 'imgs/moes.png' %}" alt="mões" class="img-fluid object-fit-contain"/>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-3 d-flex justify-content-evenly align-items-center">
+      <div class="col-lg-4 col-md-6 d-none d-md-flex">
+        <div class="card altura border-0">
+          <div class="card-body p-0">
+            <img src="{% static 'imgs/caras.png' %}" alt="caras" class="img-fluid object-fit-contain"/>
+          </div>
+        </div>
+      </div>
+      {% for transtorno in transtornos %}
+      <div class="col-lg-4 col-md-6">
+        <div class="card altura border-0 shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title text-success">{{transtorno.nome}}</h5>
+            <p class="card-text">{{transtorno.descricao_tratamento}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </main>
 {% endblock %}

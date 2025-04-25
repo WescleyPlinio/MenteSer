@@ -61,6 +61,7 @@ nav div a img {
 .bg-sucess {
     background-color: rgb(0,191,99);
 }
+/* 
 .card{
     min-height: 8.5em;
     max-height: 13.5em;
@@ -71,8 +72,4 @@ nav div a img {
         flex: 0 0 100%;
         max-width: 100%;
     }
-} 
-
-.altura {
-    height: 300px;
-}
+}  */
