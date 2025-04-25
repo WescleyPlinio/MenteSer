@@ -1,0 +1,102 @@
+[
+    {
+      "model": "menteser.Transtorno",
+      "pk": 1,
+      "fields": {
+        "nome": "Psicoterapia Cognitivo-Comportamental (TCC)",
+        "descricao_tratamento": "A TCC é uma abordagem estruturada e focada em identificar padrões de pensamento negativos. A equipe trabalha com os pacientes para ajudá-los a compreender esses padrões e substituí-los por pensamentos mais saudáveis, promovendo mudanças comportamentais significativas.",
+        "descricao": "A TCC é uma abordagem terapêutica amplamente utilizada no tratamento de transtornos como ansiedade e depressão, que foca na identificação e modificação de padrões de pensamento disfuncionais."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 2,
+      "fields": {
+        "nome": "Terapia de Aceitação e Compromisso (ACT)",
+        "descricao_tratamento": "A ACT auxilia os pacientes a aceitarem suas emoções e pensamentos difíceis, ao invés de lutar contra eles. Ao mesmo tempo, a terapia os orienta a viver de acordo com seus valores, desenvolvendo habilidades para lidar com o estresse e a ansiedade.",
+        "descricao": "A ACT é uma abordagem que combina mindfulness e aceitação, ajudando os pacientes a focar no presente e a tomar ações consistentes com seus valores pessoais."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 3,
+      "fields": {
+        "nome": "Apoio Medicamentoso para Transtornos Psiquiátricos",
+        "descricao_tratamento": "A equipe médica da MenteSer avalia e prescreve tratamentos medicamentosos para condições como depressão, ansiedade e transtornos de humor, com o objetivo de equilibrar a química cerebral e auxiliar na estabilização emocional dos pacientes.",
+        "descricao": "O uso de medicamentos psiquiátricos é uma opção complementar em muitos casos de transtornos mentais, ajudando a estabilizar o paciente para que ele possa se beneficiar melhor das terapias psicológicas."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 4,
+      "fields": {
+        "nome": "Terapia Psicodinâmica",
+        "descricao_tratamento": "Com base na psicanálise, a terapia psicodinâmica busca compreender as raízes inconscientes dos comportamentos e sentimentos. O processo envolve explorar o passado do paciente para entender como experiências anteriores impactam seu comportamento atual.",
+        "descricao": "A psicoterapia psicodinâmica explora o inconsciente e as dinâmicas emocionais passadas que influenciam os sentimentos e comportamentos atuais, ajudando o paciente a alcançar uma maior compreensão de si mesmo."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 5,
+      "fields": {
+        "nome": "Aconselhamento Familiar",
+        "descricao_tratamento": "Quando os problemas emocionais afetam a dinâmica familiar, a equipe de MenteSer oferece sessões de aconselhamento familiar para promover o entendimento, melhorar a comunicação e resolver conflitos entre os membros da família.",
+        "descricao": "O aconselhamento familiar ajuda a resolver conflitos e melhorar a comunicação entre os membros da família, promovendo um ambiente mais saudável para todos."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 6,
+      "fields": {
+        "nome": "Psicoeducação",
+        "descricao_tratamento": "A psicoeducação é voltada para fornecer informações sobre condições mentais aos pacientes e seus familiares. Isso ajuda a reduzir o estigma, aumenta a compreensão sobre o transtorno e capacita os indivíduos a lidar melhor com o diagnóstico.",
+        "descricao": "A psicoeducação visa aumentar o conhecimento sobre condições mentais, capacitando os pacientes e suas famílias a compreenderem e lidarem de forma mais eficaz com os transtornos."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 7,
+      "fields": {
+        "nome": "Terapia de Grupo",
+        "descricao_tratamento": "Nos grupos terapêuticos, os pacientes podem compartilhar experiências com outras pessoas que estão enfrentando situações semelhantes. Essa abordagem fortalece o senso de comunidade e proporciona apoio emocional através da troca de experiências.",
+        "descricao": "A terapia de grupo proporciona um ambiente seguro e colaborativo onde os pacientes podem se apoiar mutuamente e aprender com as experiências uns dos outros."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 8,
+      "fields": {
+        "nome": "Treinamento em Habilidades Sociais",
+        "descricao_tratamento": "O foco dessa terapia é melhorar a comunicação e as interações sociais, ajudando os pacientes a se relacionarem melhor com os outros. Técnicas como role-playing e feedback construtivo são utilizadas para aumentar a confiança e as habilidades interpessoais.",
+        "descricao": "O treinamento em habilidades sociais é focado em melhorar a interação com os outros e a construção de relacionamentos saudáveis, principalmente para aqueles com dificuldades de comunicação."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 9,
+      "fields": {
+        "nome": "Intervenção em Crises",
+        "descricao_tratamento": "Em situações de crise, a equipe da MenteSer oferece suporte imediato para estabilizar o paciente, avaliando a situação e oferecendo estratégias de enfrentamento, com o objetivo de evitar que a crise se agrave.",
+        "descricao": "A intervenção em crises é uma abordagem emergencial para lidar com momentos de intenso sofrimento emocional, oferecendo suporte imediato para estabilizar o paciente."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 10,
+      "fields": {
+        "nome": "Terapia para Transtornos Alimentares",
+        "descricao_tratamento": "A equipe especializada em transtornos alimentares trabalha com os pacientes para lidar com questões relacionadas à alimentação, imagem corporal e emoções, ajudando-os a desenvolver uma relação saudável com a comida e o corpo.",
+        "descricao": "A terapia para transtornos alimentares aborda problemas relacionados à alimentação, imagem corporal e padrões emocionais prejudiciais, promovendo uma relação mais saudável com o corpo e a comida."
+      }
+    },
+    {
+      "model": "menteser.Transtorno",
+      "pk": 11,
+      "fields": {
+        "nome": "Mindfulness e Terapias Baseadas em Atenção Plena",
+        "descricao_tratamento": "Técnicas de mindfulness são utilizadas para ajudar os pacientes a se concentrarem no momento presente, diminuindo o estresse e a ansiedade. A prática de meditação e atenção plena tem mostrado grandes benefícios na melhoria do bem-estar emocional.",
+        "descricao": "Mindfulness é a prática de focar no presente, ajudando a reduzir o estresse e a ansiedade, promovendo uma maior paz interior e controle emocional."
+      }
+    }
+  ]
+  
