@@ -17,9 +17,22 @@
         <a class="nav-link text-center text-white" href="#">Blog</a>
       </li>
 
+      {% if user.is_authenticated %}
+      <li class="nav-item">
+        <a class="nav-link text-center text-white" href="{% url 'index' %}">Área do {{request.user.username}}</a>
+      </li>
+      <li class="nav-item">
+        <form class="nav-link text-center text-white" action="{% url 'logout' %}" method="post">
+          {% csrf_token %}
+          <a type="submit" class="text-white">Sair</a>
+        </form>
+      </li>
+      {% else %}
       <li class="nav-item">
         <a class="nav-link text-center text-white" href="{% url 'login' %}">Área do usuário</a>
       </li>
+      {% endif %}
+    
     </ul>
     <button class="btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-xl text-success fa-bars"></i></button>
   </div>

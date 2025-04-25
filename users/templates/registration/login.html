@@ -8,12 +8,12 @@
       <h1 class="text-center text-success mb-4">Login</h1>
       <div class="mb-3">
         <label for="cpf" class="form-label">CPF</label>
-        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" />
+        {{ form.username }}
       </div>
 
       <div class="mb-3">
         <label for="password" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="password" placeholder="Digite sua senha" />
+        {{ form.password }}
       </div>
 
       <button type="submit" class="btn btn-info text-white w-100">Entrar</button>
