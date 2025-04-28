@@ -1,21 +1,11 @@
 {% extends 'registration/base_forms.html' %}
-{% load static %}
+{% load static crispy_forms_filters %}
 {% block content %}
   <div class="d-flex flex-column justify-content-center align-items-center">
     <a class="mb-4" href="{% url 'index' %}"><img src="{% static 'imgs/LogoH.svg' %}" alt="Logo" class="logo" /></a>
     <form class="bg-white my-auto shadow-lg p-5 rounded" method="POST" action="{% url 'login' %}">
       {% csrf_token %}
-      <h1 class="text-center text-success mb-4">Login</h1>
-      <div class="mb-3">
-        <label for="cpf" class="form-label">CPF</label>
-        {{ form.username }}
-      </div>
-
-      <div class="mb-3">
-        <label for="password" class="form-label">Senha</label>
-        {{ form.password }}
-      </div>
-
+      {{ form|crispy }}
       <button type="submit" class="btn btn-info text-white w-100">Entrar</button>
     </form>
   </div>
