@@ -14,7 +14,10 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: center;
-    
+}
+
+.carousel-caption-static h1, .carousel-caption-static p {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.699);
 }
 
 .carousel-item img{
