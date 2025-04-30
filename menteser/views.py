@@ -1,12 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View 
-from .models import Transtorno
+from .models import Transtorno, Servico, ImagemIndex
 
 # Index page
 class Index(View):
     def get(self, request):
-        return render(request, 'index.html')
+        imagens = ImagemIndex.objects.all()
+        servicos = Servico.objects.all()
+        context = {
+            'imagens': imagens,
+            'servicos': servicos
+        }
+        return render(request, 'index.html', context)
     
 class Tratamentos(View):
     def get(self, request):

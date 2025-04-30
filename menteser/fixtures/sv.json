@@ -1,0 +1,56 @@
+[
+  {
+    "model": "menteser.Servico",
+    "pk": 1,
+    "fields": {
+      "nome": "Pronto Atendimento Psiquiátrico 24h",
+      "descricao": "Disponível 24 horas por dia para atender emergências e crises psiquiátricas. Conta com equipe especializada, capaz de indicar a melhor forma de cuidado para cada caso.",
+      "icone": "ambulance"
+    }
+  },
+  {
+    "model": "menteser.Servico",
+    "pk": 2,
+    "fields": {
+      "nome": "Hospital Integral",
+      "descricao": "Internação para quem necessita de cuidados intensivos na recuperação de transtornos psiquiátricos ou de dependência química, com apoio de uma equipe multidisciplinar.",
+      "icone": "hospital"
+    }
+  },
+  {
+    "model": "menteser.Servico",
+    "pk": 3,
+    "fields": {
+      "nome": "Hospital-Dia",
+      "descricao": "Com atividades terapêuticas, suporte médico e psicológico completo, essa é uma alternativa eficaz para quem precisa de tratamento intensivo sem a necessidade de internação.",
+      "icone": "hospital"
+    }
+  },
+  {
+    "model": "menteser.Servico",
+    "pk": 4,
+    "fields": {
+      "nome": "Residências & Moradias",
+      "descricao": "Residências seguras e estruturadas para pacientes em fase de reabilitação, com foco na reintegração social, profissionais multidisciplinares e suporte diário contínuo.",
+      "icone": "bed"
+    }
+  },
+  {
+    "model": "menteser.Servico",
+    "pk": 5,
+    "fields": {
+      "nome": "Ambulatório",
+      "descricao": "Consultas psiquiátricas regulares para o acompanhamento e tratamento de transtornos mentais, ideal para o manejo de casos de baixa e média complexidade.",
+      "icone": "stethoscope"
+    }
+  },
+  {
+    "model": "menteser.Servico",
+    "pk": 6,
+    "fields": {
+      "nome": "Psiquiatria Intervencionista",
+      "descricao": "Procedimentos terapêuticos inovadores para casos de difícil tratamento medicamentoso habitual.",
+      "icone": "pills"
+    }
+  }
+]

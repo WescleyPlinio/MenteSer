@@ -11,38 +11,12 @@
   </head>
 
   <body>
-    {% if request.path == '/' %}
-      <header class="band" style="background-image: url('{% static 'imgs/fundo.jpeg' %}">
-        {% include 'partials/_navbar.html' %}
-        <div class="header-content">
-          <h1 class="text-sucess fw-bold">Bem-vindo ao MenteSer</h1>
-          <p class="text-dark">Aqui você fala conosco, e nós te ouvimos.</p>
-          <a href="agendar.html" class="btn btn-info text-light">Venha agendar</a>
-        </div>
-      </header>
-    {% else %}
-      {% include 'partials/_navbar.html' %}
-    {% endif %}
-
+    {% include "partials/_navbar.html" %}
+    
     {% block content %}
     {% endblock %}
-
-    <footer class="bg-dark py-4">
-      <div class="container custom-container">
-        <div class="row g-2">
-          <div class="col-md-6 col-sm-12 col-lg-6 d-flex">
-            <p class="text-center text-white m-auto">MenteSer &copy; 2025. Todos os direitos reservados.</p>
-          </div>
-          <div class="col-md-6 col-sm-12 col-lg-6 d-flex">
-            <ul class="m-auto">
-              <a class="mx-3 text-decoration-none" href="https://github.com/WescleyPlinio"><i class="fa-brands fa-github fa-2x text-white"></i></a>
-              <a class="mx-3 text-decoration-none" href="https://www.instagram.com/wpg06/"><i class="fa-brands fa-instagram fa-2x text-white"></i></a>
-              <a class="mx-3 text-decoration-none" href="https://www.linkedin.com/in/dvwescley/"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
+    {% include "partials/_footer.html" %}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
